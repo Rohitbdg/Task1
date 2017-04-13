@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/bank_item"
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/hdfc"
+        android:id="@+id/bank_img"
+        />
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HDFC"
+        android:layout_toRightOf="@+id/bank_img"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="16sp"
+        android:textColor="#9e9e9e"/>
+
+    <TextView
+        android:layout_below="@+id/bank_name"
+        android:layout_toRightOf="@+id/bank_img"
+        android:id="@+id/bank_fund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABC Mutual Funds"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="16sp"
+        android:textColor="#9e9e9e"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Withdrawal"
+        android:layout_toLeftOf="@+id/bankswitch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="13sp"
+        android:textColor="#9e9e9e"/>
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/bankswitch"
+                android:theme="@style/SCBSwitch"/>
+
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current value"
+        android:layout_below="@+id/bank_img"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="15sp"
+        android:textColor="#9e9e9e"
+        />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="right"
+        android:id="@+id/rs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RS5000"
+        android:layout_below="@+id/amt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        android:textColor="#616161"
+        />
+
+    <TextView
+        android:textColor="#9e9e9e"
+        android:layout_marginTop="43dp"
+        android:id="@+id/withdraw_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdrawal Amount"
+      android:layout_below="@+id/bankswitch"
+        android:layout_alignParentRight="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:layout_marginTop="-7dp"
+        android:layout_gravity="right"
+        android:id="@+id/withdraw_rs"
+        android:layout_height="wrap_content"
+        android:text="5000"
+       android:layout_below="@+id/withdraw_amt"
+        android:layout_alignParentRight="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:layout_width="100sp"
+        android:textColor="#616161"
+        />
+        </RelativeLayout>
+</RelativeLayout>
